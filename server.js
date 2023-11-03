@@ -1,10 +1,5 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const app = express();
-
-// Middleware to parse JSON data from POST requests
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
 
 // Initialize a variable to store the user's input
 let userInput = '';
